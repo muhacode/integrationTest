@@ -16,6 +16,7 @@ public class CardTest {
     private String accessToken;
     private String baseURI;
 
+
     @BeforeMethod
     public void setUp() {
         accessToken = baseSetUp.getAccessToken();

@@ -41,6 +41,7 @@ public class GetBankCardProductsTest {
         given().auth().oauth2(invalidToken).when().get(baseURI + "/api/v2/card/card-products").then().statusCode(401).body("error", equalTo("invalid_token")).body("error_description", containsString("inlinecodedemoversion456")).log().all();
     }
 
+
     @Test
     public void getOneCard() {
         given().auth().oauth2(accessToken).when().get(baseURI + "/api/v2/card/card-products").then().statusCode(200).log().all();

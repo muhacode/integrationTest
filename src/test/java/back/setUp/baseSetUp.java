@@ -9,6 +9,7 @@ public class baseSetUp {
         return "fe5168e1-1ca6-45ad-995b-3e66939c18c8";
     }
 
+
     public String getBaseURI() {
         return "https://preprod.golovnoy.uz";
     }
