@@ -5,10 +5,11 @@ public class baseSetUp {
     private static int port;
     private static String authToken;
 
-    public String  getAccessToken(){
+    public String getAccessToken() {
         return "fe5168e1-1ca6-45ad-995b-3e66939c18c8";
     }
-    public String getBaseURI(){
+
+    public String getBaseURI() {
         return "https://preprod.golovnoy.uz";
     }
 //    public int getPort(){
