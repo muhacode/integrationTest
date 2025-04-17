@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Test Suite">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="Bank Product Tests">
+        <classes>
+            <class name="back.integration.card.bankCardProducts.GetBankCardProductsTest"></class>
+            
+        </classes>
+    </test>
+    <test name="Card API Tests">
+        <classes>
+            <class name="back.integration.card.cardLife.CardTest"></class>
+        </classes>
+    </test>
+</suite>
