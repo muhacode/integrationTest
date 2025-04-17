@@ -29,8 +29,7 @@ public class GetBankCardProductsTest {
     @Description("Card productlar ro‘yxatini olish")
     public void getBankCardProduct() {
 //        int setPort = baseSetUp.getPort();
-        given().auth().oauth2(accessToken).when().get(baseURI + "/api/v2/card/card-products")
-                .then().statusCode(200).log().all();
+        given().auth().oauth2(accessToken).when().get(baseURI + "/api/v2/card/card-products").then().statusCode(200).log().all();
     }
 
     @Test
@@ -39,18 +38,11 @@ public class GetBankCardProductsTest {
         String invalidToken = "inlinecodedemoversion456";
 //        int setPort = baseSetUp.getPort();
         //Negative test case
-        given().auth().oauth2(invalidToken)
-                .when()
-                .get(baseURI + "/api/v2/card/card-products")
-                .then().statusCode(401)
-                .body("error", equalTo("invalid_token")).body("error_description", containsString("inlinecodedemoversion456")).log().all();
+        given().auth().oauth2(invalidToken).when().get(baseURI + "/api/v2/card/card-products").then().statusCode(401).body("error", equalTo("invalid_token")).body("error_description", containsString("inlinecodedemoversion456")).log().all();
     }
 
     @Test
     public void getOneCard() {
-        given().auth().oauth2(accessToken)
-                .when()
-                .get(baseURI + "/api/v2/card/card-products")
-                .then().statusCode(200).log().all();
+        given().auth().oauth2(accessToken).when().get(baseURI + "/api/v2/card/card-products").then().statusCode(200).log().all();
     }
 }
