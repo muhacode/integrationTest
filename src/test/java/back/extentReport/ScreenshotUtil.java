@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
 public class ScreenshotUtil {
 
     public static String takeScreenshot(WebDriver driver, String screenshotName) {

@@ -17,6 +17,7 @@ public class ExtentManager {
         return extent;
     }
 
+
     private static ExtentReports createInstance() {
         String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
         String fileName = "extent-report-" + timeStamp + ".html";

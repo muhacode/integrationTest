@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+
 import static io.restassured.RestAssured.given;
 
 @Listeners({io.qameta.allure.testng.AllureTestNg.class})

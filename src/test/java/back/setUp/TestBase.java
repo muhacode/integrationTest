@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.lang.reflect.Method;
 
+
 public class TestBase {
     public static ExtentReports extent;
     public static ExtentTest test;

@@ -42,6 +42,7 @@ public class GetBankCardProductsTest {
     }
 
 
+
     @Test
     public void getOneCard() {
         given().auth().oauth2(accessToken).when().get(baseURI + "/api/v2/card/card-products").then().statusCode(200).log().all();
