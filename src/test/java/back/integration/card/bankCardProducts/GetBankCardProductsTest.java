@@ -1,6 +1,6 @@
 package back.integration.card.bankCardProducts;
 
-import back.setUp.baseSetUp;
+import back.setUp.BaseSetUp;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.testng.annotations.BeforeMethod;
@@ -15,7 +15,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 
 public class GetBankCardProductsTest {
-    baseSetUp baseSetUp = new baseSetUp();
+    BaseSetUp baseSetUp = new BaseSetUp();
     private String accessToken;
     private String baseURI;
 

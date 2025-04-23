@@ -1,12 +1,12 @@
 package back.setUp;
 
-public class baseSetUp {
+public class BaseSetUp {
     private static String baseURI;
     private static int port;
     private static String authToken;
 
     public String getAccessToken() {
-        return "fe5168e1-1ca6-45ad-995b-3e66939c18c8";
+        return "a498b047-72f4-4efd-a1c9-e040fbfa22dc";
     }
 
 
